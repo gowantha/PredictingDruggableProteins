@@ -147,10 +147,6 @@ datasets = ['TR_pos_SPIDER', 'TR_neg_SPIDER', 'TS_pos_SPIDER', 'TS_neg_SPIDER']
 outdir_parent = ''
 # extract_features(feature_types, datasets, outdir_parent)
 
-#your_script_name <positive training data> <negative training data> <positive testing data> <negative testing data>
-#  F:/Projects/PredictingDruggableProteins/venv/Scripts/python.exe f:/Projects/PredictingDruggableProteins/PredictingDruggableProteins/Bio_Ass.py TR_pos_SPIDER TR_neg_SPIDER TS_pos_SPIDER TS_neg_SPIDE
-
-
 # Classfier using AAC feature type
 
 print("\nClassfier using AAC feature type")
@@ -254,3 +250,8 @@ negetive_ensemble_preds = getEnasmblePreds(model_list, 3)
 with open('predictions_neg.txt', 'w') as file:
     for prediction in negetive_ensemble_preds:
         file.write(str(prediction) + '\n')
+
+
+
+
+        #F:/Projects/PredictingDruggableProteins/venv/Scripts/python.exe f:/Projects/PredictingDruggableProteins/PredictingDruggableProteins/Bio_Ass.py TR_pos_SPIDER TR_neg_SPIDER TS_pos_SPIDER TS_neg_SPIDER
